@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SPA Projekt - Chmura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <ul class="Header-links-ul">
+        <li class="header-link" id="about-link">About Me</li>
+        <li class="header-link" id="contact-link">Contact</li>
+        <li class="header-link" id="gallery-link">Gallery</li>
+    </ul>
+    <button id="theme-toggle">Dark/Light Mode</button>
+</header>
+
+<main id="app-root">
+    <h1 class="title">Hello World!</h1>
+    <p>Wybierz zakładkę z menu...</p>
+</main>
+
+<div id="image-modal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modal-img">
+</div>
+
+<script src="js/router.js"></script>
+</body>
+</html>
