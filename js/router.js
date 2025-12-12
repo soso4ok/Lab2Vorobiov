@@ -80,7 +80,7 @@ function RenderContactPage() {
         const captchaContainer = document.querySelector('.g-recaptcha');
         try {
             grecaptcha.render(captchaContainer, {
-                'sitekey': '6LdccyksAAAAAO2AhMkWpJnwLV0wXAzz6YRMEpLn'
+                'sitekey': '6LfbdCksAAAAAJoydrfE4x_c8HD0dK39x1Dhs3_v'
             });
         } catch (error) {}
     }
