@@ -70,7 +70,7 @@ function RenderContactPage() {
             <textarea id="message" name="message" required minlength="10"></textarea>
             <span class="error-msg" id="err-msg" style="display:none; color:red;">Wiadomość jest za krótka.</span>
             
-            <div class="g-recaptcha" data-sitekey="TU_WKLEJ_SWOJ_KLUCZ_WITRYNY" style="margin-top: 15px;"></div>
+            <div class="g-recaptcha" data-sitekey="6LfbdCksAAAAAJoydrfE4x_c8HD0dK39x1Dhs3_v" style="margin-top: 15px;"></div>
             <span class="error-msg" id="err-captcha" style="display:none; color:red;">Potwierdź, że nie jesteś robotem.</span>
 
             <button type="submit">Send</button>
@@ -85,11 +85,6 @@ function RenderContactPage() {
         } catch (error) {}
     }
 
-        if (document.querySelector('.g-recaptcha')) {
-            grecaptcha.render(document.querySelector('.g-recaptcha'), {
-                'sitekey': '6LfbdCksAAAAAJoydrfE4x_c8HD0dK39x1Dhs3_v'
-            });
-        }
 
 
     const form = document.getElementById('contact-form');
