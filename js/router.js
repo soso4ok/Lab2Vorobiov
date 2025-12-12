@@ -85,6 +85,13 @@ function RenderContactPage() {
         } catch (error) {}
     }
 
+        if (document.querySelector('.g-recaptcha')) {
+            grecaptcha.render(document.querySelector('.g-recaptcha'), {
+                'sitekey': '6LfbdCksAAAAAJoydrfE4x_c8HD0dK39x1Dhs3_v'
+            });
+        }
+
+
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', (event) => {
         event.preventDefault();
